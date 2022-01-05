@@ -1,8 +1,6 @@
-function dutyFree(normPrice, discount, hol){
-let bott;
-return bott=Math.floor(hol / ((normPrice * discount) / 100));
+function smash (words) {
+    return words.join(' ').trim();
 
-}
+};
 
-
-console.log(dutyFree(17, 10 ,500));
+console.log(smash (['hello', 'Hi', 'Goodbuy']))
