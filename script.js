@@ -1,17 +1,14 @@
-function peopleWithAgeDrink(old) {
-    let answer = "";
-
-    if (old < 14) {
-        return answer = "drink toddy"
-    } else if (old >= 14 && old <= 17) {
-        return answer = "drink coke"
-    } else if (old > 17 && old < 21) {
-        return answer = "drink beer"
-    } else {
-        return answer = "drink whisky"
+const removeConsecutiveDuplicates = (s) => {
+    let newS = s.split(' ');
+    let newArr = [];
+    for (let i = 0; i <= newS.length; i++) {
+        if (newS[i] !== newS[i + 1]) {
+            newArr.push(newS[i])
+        }
     }
 
+    return newArr.join(' ');
+}
 
-};
 
-console.log(peopleWithAgeDrink(30))
+console.log(removeConsecutiveDuplicates("alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"))
