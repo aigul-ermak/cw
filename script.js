@@ -1,5 +1,34 @@
-function makeUpperCase(str) {
-    return str.toUpperCase();
+function switchItUp(number) {
+    switch (number) {
+        case 0 :
+            return "Zero";
+        case 1 :
+            return "One";
+            break;
+        case 2:
+            return "Two";
+            break;
+        case 3:
+            return "Three";
+            break;
+        case 4:
+            return "Four";
+            break;
+        case 5:
+            return  "Five";
+            break;
+        case 6:
+            return "Six";
+            break;
+        case 7:
+            return "Seven";
+            break;
+        case 8:
+            return "Eight";
+        case 9:
+            return "Nine";
+            break;
+    }
 }
 
-console.log(makeUpperCase('hello'))
+console.log(switchItUp(8))
