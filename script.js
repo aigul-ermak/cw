@@ -1,16 +1,15 @@
-function squareDigits(num) {
-
-    let newArr = num.toString().split('')
-    let arr = []
-
-    for (let i = 0; i < newArr.length; i++) {
-        let n = newArr[i] * newArr[i]
-        arr.push(n)
+function basicOp(operation, value1, value2)
+{
+    if (operation === '+') {
+        return value1 + value2
+    } else if ( operation === '-') {
+        return value1 - value2
+    } else if (operation === '*') {
+        return value1 * value2
+    } else if (operation === '/') {
+        return value1 / value2
     }
-    let s = Number(arr.join(''))
-    return s
+
 }
 
-console.log(squareDigits('2112'))
-
-console.log(typeof (squareDigits('2112')))
+console.log(basicOp('/', 49, 7))
