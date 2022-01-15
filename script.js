@@ -1,15 +1,13 @@
-function basicOp(operation, value1, value2)
-{
-    if (operation === '+') {
-        return value1 + value2
-    } else if ( operation === '-') {
-        return value1 - value2
-    } else if (operation === '*') {
-        return value1 * value2
-    } else if (operation === '/') {
-        return value1 / value2
+function positiveSum(arr) {
+    // let newArr = [];
+let count = 0;
+    for (let i = 0; i < arr.length ; i++) {
+        if( arr[i] >= 0) {
+           count += arr[i]
+        }
     }
-
+    return count
 }
 
-console.log(basicOp('/', 49, 7))
+
+console.log(positiveSum([1,-4,7,12]))
