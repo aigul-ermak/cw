@@ -1,13 +1,19 @@
-function positiveSum(arr) {
-    // let newArr = [];
-let count = 0;
-    for (let i = 0; i < arr.length ; i++) {
-        if( arr[i] >= 0) {
-           count += arr[i]
+function findNeedle(haystack) {
+let position = haystack.indexOf('needle');
+let message = ''
+
+    for (let i = 0; i < haystack.length ; i++) {
+        if(haystack[i] === 'needle') {
+            return message = `found the needle at position ${position}`
         }
     }
-    return count
+
+
 }
 
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
-console.log(positiveSum([1,-4,7,12]))
+
+// "found the needle at position 5"
+//
+// index
