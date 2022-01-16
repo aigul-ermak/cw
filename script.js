@@ -1,19 +1,6 @@
-function findNeedle(haystack) {
-let position = haystack.indexOf('needle');
-let message = ''
-
-    for (let i = 0; i < haystack.length ; i++) {
-        if(haystack[i] === 'needle') {
-            return message = `found the needle at position ${position}`
-        }
-    }
-
-
+function maps(x){
+return x.map(item => item*2)
 }
 
-console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
-
-// "found the needle at position 5"
-//
-// index
+console.log(maps([1, 2, 3]))
