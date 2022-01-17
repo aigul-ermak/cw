@@ -1,9 +1,12 @@
-function invert(array) {
-    for (let i = 0; i < array.length ; i++) {
-        array[i] = - array[i]
+function digitize(n) {
+    let initialArray = ('' + n).split('')
+    let arrReversed = []
+
+    for (let i =  initialArray.length - 1; i >= 0 ; i--) {
+        arrReversed[i] = +initialArray.shift()
     }
-    return array;
+
+  return arrReversed
 }
 
-
-console.log(invert([1,-2,3,-4,5]))
+console.log(digitize(456123))
