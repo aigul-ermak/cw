@@ -1,12 +1,10 @@
-function digitize(n) {
-    let initialArray = ('' + n).split('')
-    let arrReversed = []
-
-    for (let i =  initialArray.length - 1; i >= 0 ; i--) {
-        arrReversed[i] = +initialArray.shift()
+function even_or_odd(number) {
+let a = number % 2
+    if( a === 0) {
+        return "Even"
+    } else {
+        return "Odd"
     }
-
-  return arrReversed
 }
 
-console.log(digitize(456123))
+console.log(even_or_odd(2))
