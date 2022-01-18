@@ -1,15 +1,6 @@
-function find_average(array) {
-    let aver = 0
-
-    if (array.length === 0) {
-        return 0
-    } else {
-        for (let i = 0; i < array.length; i++) {
-            aver += array[i]
-        }
-        return aver / array.length;
-    }
-
+function getMiddle(s)
+{
+    let arr = s.split('')
+    let mid = Math.floor(arr.length / 2)
+    return  arr.length % 2 !== 0 ? arr[mid] : arr[mid -1 ] + arr[mid]
 }
-
-console.log(find_average([5, 4, 7]))
