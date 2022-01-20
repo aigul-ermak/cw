@@ -1,6 +1,11 @@
-function past(h, m, s){
-   let mS = (h * 60 * 60 * 1000) + (m * 60 *1000) + (s *1000)
-    return mS
-}
+function greet(name){
 
-console.log(past(1, 0, 1))
+    if(name === "Johnny") {
+        return "Hello, my love!";
+    } else {
+        return "Hello, " + name + "!";
+    }
+
+
+}
+console.log(greet("Johnny"))
