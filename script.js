@@ -1,11 +1,10 @@
-function greet(name){
+function descendingOrder(n){
 
-    if(name === "Johnny") {
-        return "Hello, my love!";
-    } else {
-        return "Hello, " + name + "!";
-    }
+    let a = Array.from(String(n), Number).sort((a,b) => b - a).join('')
 
+    let b = +a
+
+    return b
 
 }
-console.log(greet("Johnny"))
+console.log(descendingOrder(111))
