@@ -1,10 +1,6 @@
-function descendingOrder(n){
-
-    let a = Array.from(String(n), Number).sort((a,b) => b - a).join('')
-
-    let b = +a
-
-    return b
-
+function check(a, x) {
+    let b = a.includes(x)
+    return b === true;
 }
-console.log(descendingOrder(111))
+
+console.log(check(['t', 'e', 's', 't'], 'e'))
