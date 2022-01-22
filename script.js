@@ -1,21 +1,9 @@
-function highAndLow(numbers){
-    let s = 0
-    let c = numbers.split(' ').map( t => parseInt(t, 10))
-        .sort((a,b) => b - a)
-    if(c.length > 1) {
-        let z = c.splice(0, 1)
-        let f = c.splice(c.length - 1, 1)
-        s = z.concat(f).join(' ')
-    } else {
-        let z = c.splice(0, 1)
-        s = z + " " + z
-    }
+function findShort(s){
+    let arr = s.split(' ')
+    arr.sort((a,b) => a.length - b.length)
 
-
-    return s
-
-
+    return arr[0].length
 }
 
 
-console.log(highAndLow('42'))
+console.log(findShort('bitcoin take over the world maybe who knows perhaps'))
