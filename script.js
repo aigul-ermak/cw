@@ -1,9 +1,5 @@
-function findShort(s){
-    let arr = s.split(' ')
-    arr.sort((a,b) => a.length - b.length)
-
-    return arr[0].length
+function sumTwoSmallestNumbers(numbers) {
+    let a = numbers.sort((a,b) => a - b )
+    return a[0]+ a[1]
 }
-
-
-console.log(findShort('bitcoin take over the world maybe who knows perhaps'))
+console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]))
