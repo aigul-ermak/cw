@@ -1,15 +1,21 @@
-function getCount(str) {
-    let vowelsCount = 0
-    let a = str.split('')
-    for (let i = 0; i <= a.length; i ++) {
-        if (a[i] === 'a'|| a[i] === 'e' || a[i] === 'i' || a[i] === 'o' || a[i] === 'u') {
-            vowelsCount += 1
-        }
+function highAndLow(numbers){
+    let s = 0
+    let c = numbers.split(' ').map( t => parseInt(t, 10))
+        .sort((a,b) => b - a)
+    if(c.length > 1) {
+        let z = c.splice(0, 1)
+        let f = c.splice(c.length - 1, 1)
+        s = z.concat(f).join(' ')
+    } else {
+        let z = c.splice(0, 1)
+        s = z + " " + z
     }
-    return vowelsCount
+
+
+    return s
 
 
 }
 
 
-console.log(getCount('abracadabra'))
+console.log(highAndLow('42'))
