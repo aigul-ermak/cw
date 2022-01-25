@@ -1,5 +1,5 @@
-function sumTwoSmallestNumbers(numbers) {
-    let a = numbers.sort((a,b) => a - b )
-    return a[0]+ a[1]
+function friend(friends){
+   let a = friends.filter(f => f.length === 4)
+    return a
 }
-console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]))
+console.log(friend(["Ryan", "Kieran", "Mark"] ))
