@@ -1,5 +1,5 @@
-function friend(friends){
-   let a = friends.filter(f => f.length === 4)
-    return a
+function lovefunc(flower1, flower2){
+    let f = flower1 % 2
+    let f2 = flower2 % 2
+    return f !== f2 ? true : false
 }
-console.log(friend(["Ryan", "Kieran", "Mark"] ))
