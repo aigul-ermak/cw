@@ -1,10 +1,10 @@
-function reverseWords(str) {
-   let a = str.split(' ')
-    return a.map((item) => item.toString().split('').reverse().join('')).join(' ')
-
-
+function removeSmallest(numbers) {
+    let b = numbers.map(t => t).indexOf(Math.min(...numbers))
+    let newArray = [...numbers]
+    let a = newArray.splice(b, 1)
+    return newArray
 }
 
-console.log(reverseWords("This is an example!"))
+console.log(removeSmallest([2,2,1,2,1]))
 
 
