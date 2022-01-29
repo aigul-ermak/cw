@@ -1,10 +1,4 @@
-function removeSmallest(numbers) {
-    let b = numbers.map(t => t).indexOf(Math.min(...numbers))
-    let newArray = [...numbers]
-    let a = newArray.splice(b, 1)
-    return newArray
+function doubleInteger(i) {
+    // i will be an integer. Double it and return it.
+    return i * 2;
 }
-
-console.log(removeSmallest([2,2,1,2,1]))
-
-
