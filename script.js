@@ -1,17 +1,14 @@
-function points(games) {
-    let count = 0
-    let a = games.map(g => {
-        if (g[0] > g[2]) {
-            count += 3
-        } else if (g[0] === g[2]) {
-            count += 1
-        } else if (g[0] < g[2]) {
-            count += 0
-        }
-    })
-    return count
+function sum(numbers) {
+
+    if (numbers.length !== null) {
+        return numbers.reduce((accum, item) => {
+           accum += item
+            return accum
+        }, 0)
+    } else {
+        return 0
+    }
 }
 
 
-
-console.log(points(["0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"]))
+console.log(sum([]))
