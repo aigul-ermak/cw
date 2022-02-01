@@ -1,11 +1,7 @@
-function getDivisorsCnt(n) {
-    let count = 0
+function cockroachSpeed(s) {
 
-    for (let i = 1; i <= n; i++) {
-        n % i === 0 ? count += 1 : count
-    }
-    return count
+    return Math.floor(s * 1000/36)
 
+    return
 }
 
-console.log(getDivisorsCnt(54))
