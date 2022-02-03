@@ -1,7 +1,15 @@
-function cockroachSpeed(s) {
+function getSum(a, b) {
+    const min = a < b ? a : b
+    const max = a < b ? b : a
 
-    return Math.floor(s * 1000/36)
+    let count = 0
+    for (let i = min; i <= max; i++) {
+        count += i
+    }
 
-    return
+    return count
+
+
 }
 
+console.log(getSum(0, -1))
