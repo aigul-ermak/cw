@@ -1,17 +1,14 @@
-function getCount(str) {
-    var vowelsCount = 0;
-    let a = str.split('')
-    for (let i = 0; i <  a.length; i++) {
-        if(a[i] === 'a' | a[i] === 'e' | a[i] === 'i' | a[i] === 'o' | a[i] === 'u') {
-            vowelsCount += 1
-        }
+function arithmetic(a, b, operator){
+    if ( operator === "add") {
+        return a + b
+    } else if (operator === "subtract") {
+        return a - b
+    } else if (operator === "divide") {
+        return a / b
+    } else if (operator === "multiply") {
+        return a * b
     }
-
-    return vowelsCount;
-
-    // return (str.match(/[aeiou]/ig)||[]).length
 }
 
 
-
-console.log(getCount('abracadabra'))
+console.log(arithmetic(1, 2, "add"))
