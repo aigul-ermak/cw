@@ -1,13 +1,17 @@
-function checkForFactor (base, factor) {
-    // if (Number.isInteger(base / factor)) {
-    //     return true
-    // } else {
-    //     return false
-    // }
+function getCount(str) {
+    var vowelsCount = 0;
+    let a = str.split('')
+    for (let i = 0; i <  a.length; i++) {
+        if(a[i] === 'a' | a[i] === 'e' | a[i] === 'i' | a[i] === 'o' | a[i] === 'u') {
+            vowelsCount += 1
+        }
+    }
 
-    return base % factor === 0;
+    return vowelsCount;
 
+    // return (str.match(/[aeiou]/ig)||[]).length
 }
 
 
-console.log(checkForFactor(63, 7))
+
+console.log(getCount('abracadabra'))
