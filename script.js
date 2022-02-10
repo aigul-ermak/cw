@@ -1,15 +1,15 @@
-function oddOrEven(array) {
-    let a = array.reduce((acc, item) => {
-        acc += item
-        return acc
-    }, 0)
-    if ( a % 2 === 0) {
-        return 'even'
+const sequenceSum = (begin, end, step) => {
+    let count = 0
+    if (begin < end) {
+        for (let i = begin; i <= end; i = i + step) {
+            count = count + i
+        }
     } else {
-        return 'odd'
+        return 0
     }
 
-}
+    return count
+};
 
 
-console.log(oddOrEven([0, 1, 5]))
+console.log(sequenceSum(1, 5, 1))
