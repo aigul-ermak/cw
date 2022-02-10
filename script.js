@@ -1,15 +1,10 @@
-const sequenceSum = (begin, end, step) => {
-    let count = 0
-    if (begin < end) {
-        for (let i = begin; i <= end; i = i + step) {
-            count = count + i
-        }
-    } else {
-        return 0
-    }
+function gimme(triplet) {
 
-    return count
-};
+    let b = [...triplet].sort((a, b) => a - b)
+
+    let a = triplet.indexOf(b[b.length - 2])
+return a
+}
 
 
-console.log(sequenceSum(1, 5, 1))
+console.log(gimme([-2, -3, -1]))
