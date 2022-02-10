@@ -1,14 +1,15 @@
-function arithmetic(a, b, operator){
-    if ( operator === "add") {
-        return a + b
-    } else if (operator === "subtract") {
-        return a - b
-    } else if (operator === "divide") {
-        return a / b
-    } else if (operator === "multiply") {
-        return a * b
+function oddOrEven(array) {
+    let a = array.reduce((acc, item) => {
+        acc += item
+        return acc
+    }, 0)
+    if ( a % 2 === 0) {
+        return 'even'
+    } else {
+        return 'odd'
     }
+
 }
 
 
-console.log(arithmetic(1, 2, "add"))
+console.log(oddOrEven([0, 1, 5]))
