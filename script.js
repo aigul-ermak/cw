@@ -1,9 +1,11 @@
-function number(array) {
- return array.map ((a, i) => {
-     return  `${i+1}: ${a}`
- })
+var isSquare = function (n) {
+    if (n === 0) {
+        return true
+    } else {
+        return n > 0 && Math.sqrt(n) % 1 === 0;
+    }
 
 }
 
 
-console.log(number(["a", "b", "c"]))
+console.log(isSquare(3))
