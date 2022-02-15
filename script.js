@@ -1,11 +1,10 @@
-var isSquare = function (n) {
-    if (n === 0) {
-        return true
-    } else {
-        return n > 0 && Math.sqrt(n) % 1 === 0;
-    }
+function sortByLength (array) {
 
-}
+    return array.sort((a,b) => a.length - b.length)
+};
+console.log(sortByLength(["Beg", "Life", "I", "To"]))
 
 
-console.log(isSquare(3))
+// for (let i = 0; i <= array.length ; i++) {
+//
+// }
