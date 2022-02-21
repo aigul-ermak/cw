@@ -1,10 +1,14 @@
-function sortByLength (array) {
-
-    return array.sort((a,b) => a.length - b.length)
+function divisors(integer) {
+    let arr = []
+    let text = `${integer} is prime`
+    for (let i = 1; i < integer; i++) {
+        if(integer % i === 0 && i !== 1) {
+            arr.push(i)
+        }
+    }
+    if( arr.length !== 0) {
+        return arr
+    } else {
+        return text
+    }
 };
-console.log(sortByLength(["Beg", "Life", "I", "To"]))
-
-
-// for (let i = 0; i <= array.length ; i++) {
-//
-// }
