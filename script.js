@@ -1,15 +1,15 @@
-function getCount(str) {
-    let re = /[aeiou]/gi
-    let arr = str.match(re)
+function sumDigits(number) {
+    let a = number.toString().replace('-', '').split('')
+    let b = a.reduce((acc, item) => {
 
-    if (!arr) {
-        return 0
-    } else {
-        return arr.length
-    }
+        acc = acc + (+item)
+        return acc;
+    }, 0)
+    return b
 }
 
-console.log(getCount('abracadabra'))
+
+console.log(sumDigits(-14))
 
 
 
