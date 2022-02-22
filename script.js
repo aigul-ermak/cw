@@ -1,10 +1,15 @@
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+function getCount(str) {
+    let re = /[aeiou]/gi
+    let arr = str.match(re)
 
-    return mpg * fuelLeft >= distanceToPump
+    if (!arr) {
+        return 0
+    } else {
+        return arr.length
+    }
+}
 
-};
-
-console.log(zeroFuel(100, 50, 2))
+console.log(getCount('abracadabra'))
 
 
 
