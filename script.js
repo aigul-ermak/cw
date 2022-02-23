@@ -1,21 +1,13 @@
-function addBinary(a,b) {
-  return (a+b).toString(2)
+function roundToNext5(n){
+let a = (n / 5)
+    return Math.ceil(a) * 5
 }
 
-console.log(addBinary(2,5))
+console.log(roundToNext5(2))
 
 
-// 0 0
-//1 1
-//10 2
-//11 3
-//100 4
-// 101 5
-//110 6
-//111 7
-//1000 8
-//1001 9
-//1010 10
+
+
 
 
 
