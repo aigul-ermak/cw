@@ -1,14 +1,9 @@
-function doubleChar(str) {
-    let arr = []
-    let a = str.split('')
-    for (let i = 0; i < a.length; i++) {
-        arr.push(a[i] + a[i])
-    }
-    return arr.join('')
+String.prototype.isUpperCase = function() {
+    return String(this) === this.toUpperCase()
 }
 
-console.log(doubleChar('Hello World'))
 
+console.log('hello I AM DONALD'.isUpperCase())
 
 
 
