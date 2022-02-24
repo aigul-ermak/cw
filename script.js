@@ -1,9 +1,13 @@
-function roundToNext5(n){
-let a = (n / 5)
-    return Math.ceil(a) * 5
+function doubleChar(str) {
+    let arr = []
+    let a = str.split('')
+    for (let i = 0; i < a.length; i++) {
+        arr.push(a[i] + a[i])
+    }
+    return arr.join('')
 }
 
-console.log(roundToNext5(2))
+console.log(doubleChar('Hello World'))
 
 
 
