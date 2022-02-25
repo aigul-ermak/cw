@@ -1,25 +1,15 @@
-function printerError(s) {
-    let re = /[n-z]/gi
-    let arr = s.match(re)
-    let c
-    if(!arr) {
-        c = 0
-    } else {
-        c = arr.length
-    }
+function minMax(arr){
+    let a = arr.sort((a, b) => a - b)
+    let b = []
+    b.push(a.slice(0, 1))
+    b.push(a.slice(-1))
 
-    let a = s.split('')
-    let b =  a.length
 
-    let d = []
-    d.push(c)
-    d.push(b)
-
-    return d.join('/')
+    return b.reduce((prev, item) => prev.concat(item))
 }
 
 
-console.log(printerError("aaabbbbhaijjj"))
+console.log(minMax([2334454,5]))
 
 
 
