@@ -1,18 +1,7 @@
-function testEven(n) {
-    function testEven(n) {
-        if (n % 2 === 0) {
-            return true
-        } else {
-            return false
-        }
+function greet (name, owner) {
+    if ( name === owner) {
+        return 'Hello boss'
+    } else {
+        return 'Hello guest'
     }
 }
-
-
-
-
-
-
-
-
-
