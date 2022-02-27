@@ -1,10 +1,12 @@
-String.prototype.toJadenCase = function () {
-    let a = String(this).split(' ')
+function findNextSquare(sq) {
 
-    return a.map(m => m[0].toUpperCase() + m.slice(1)).join(' ')
+    if (Math.sqrt(sq) % 1 === 0) {
+        return (Math.sqrt(sq) + 1)*(Math.sqrt(sq) + 1)
+    } else {
+        return -1
+    }
+}
 
-};
 
-
-console.log("How can mirrors be real if our eyes aren't real".toJadenCase())
+console.log(findNextSquare(121))
 
