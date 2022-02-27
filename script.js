@@ -1,12 +1,11 @@
-function findNextSquare(sq) {
-
-    if (Math.sqrt(sq) % 1 === 0) {
-        return (Math.sqrt(sq) + 1)*(Math.sqrt(sq) + 1)
-    } else {
-        return -1
+var countSheep = function (num){
+    let arr = []
+    for (let i = 1; i <= num ; i++) {
+        arr.push(`${i} sheep...`)
     }
+    return arr.join('')
 }
 
 
-console.log(findNextSquare(121))
+console.log(countSheep(3))
 
