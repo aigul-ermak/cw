@@ -1,11 +1,13 @@
-var countSheep = function (num){
-    let arr = []
-    for (let i = 1; i <= num ; i++) {
-        arr.push(`${i} sheep...`)
-    }
-    return arr.join('')
+function getAge(inputString) {
+    let a = inputString.split('')
+    let b = +a[0]
+
+    console.log(typeof b)
+
+    return b
+
 }
 
+console.log(getAge('4 years old'))
 
-console.log(countSheep(3))
 
