@@ -1,13 +1,7 @@
-function getAge(inputString) {
-    let a = inputString.split('')
-    let b = +a[0]
-
-    console.log(typeof b)
-
-    return b
-
+function problem(x){
+    if (typeof x === 'string') {
+        return 'Error'
+    } else {
+        return x * 50 + 6
+    }
 }
-
-console.log(getAge('4 years old'))
-
-
