@@ -1,7 +1,8 @@
-function problem(x){
-    if (typeof x === 'string') {
-        return 'Error'
-    } else {
-        return x * 50 + 6
-    }
+function removeExclamationMarks(s) {
+    let re = /!/g
+
+    return s.replaceAll(re, '');
 }
+
+
+console.log(removeExclamationMarks("Hello World!!"))
