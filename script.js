@@ -1,8 +1,10 @@
-function removeExclamationMarks(s) {
-    let re = /!/g
-
-    return s.replaceAll(re, '');
+function mouthSize(animal) {
+  if (animal.toLowerCase() === "alligator") {
+      return 'small'
+  } else {
+      return 'wide'
+  }
 }
 
 
-console.log(removeExclamationMarks("Hello World!!"))
+console.log(mouthSize("toucan"))
