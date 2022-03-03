@@ -1,10 +1,6 @@
-function mouthSize(animal) {
-  if (animal.toLowerCase() === "alligator") {
-      return 'small'
-  } else {
-      return 'wide'
-  }
+function replace(s){
+  let re = /[aeiouAEIOU]/gi
+    return s.replace(re, '!')
 }
 
-
-console.log(mouthSize("toucan"))
+console.log(replace("Hi!"))
