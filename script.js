@@ -1,17 +1,15 @@
-function nbDig(n, d) {
+function findSum(n) {
     let arr = []
-    let count = 0
-    for (let i = 0; i <= n; i++) {
-        arr.push(i * i)
+    for (let i = 1; i <= n ; i++) {
+        if( i % 3 === 0 || i % 5 === 0) {
+            arr.push(i)
+        }
     }
-    let a = arr.toString().split('')
-
-    for (let j = 0; j <= a.length; j++) {
-        debugger
-        if (a[j] == d)
-            count = count + 1
-    }
-    return count
+    return arr.reduce((acc, item) => {
+        acc = acc+ item
+        return acc
+    })
 }
 
-console.log(nbDig(5750, 0))
+
+console.log(findSum(10))
