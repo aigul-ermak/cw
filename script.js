@@ -1,19 +1,29 @@
-function checkExam(array1, array2) {
-  let count = 0
-    for (let i = 0; i < array1.length ; i++) {
+function maxMultiple(divisor, bound) {
+    let arr = []
 
-        if (array2[i] === '') {
-            count = count + 0
-        } else  if (array1[i] === array2[i]) {
-            count = count + 4
-        } else if (array1[i] !== array2[i]) {
-            count = count - 1
+    for (let i = 0; i <= bound; i++) {
+        if (i % divisor === 0) {
+            arr.push(i)
         }
     }
+    let c = arr.reduce((acc, item) => {
+        if (acc === null || item > acc) {
+            return item
+        }
+    }, null)
+
+    return  c
 
 
-    return count < 0 ? 0 : count
 }
 
-console.log(checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]))
-//+4   -1   +0 if score < 0 return 0
+console.log(maxMultiple(37, 200))
+//n / divisor   6/2
+// n < = bound 6 < 7
+// n > 0
+
+// a % divisor === 0
+// a < = bound
+// a > 0
+//
+// return a
