@@ -1,10 +1,15 @@
-function disemvowel(str) {
-let re = /[aeiou]/gi
+function findMultiples(integer, limit) {
+    let arr = []
 
-    return str.replace(re, '')
+    for (let i = integer; i <= limit ; i++) {
+        if( i % integer === 0) {
+            arr.push(i)
+        }
+    }
+    return arr
 }
 
-console.log(disemvowel('This website is for losers LOL!'))
+console.log(findMultiples(4, 27))
 
 
 
