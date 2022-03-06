@@ -1,15 +1,10 @@
-function enough(cap, on, wait) {
-    if (cap > (on + wait)) {
-        return 0
-    } else if  ( cap === (on + wait)) {
-        return 0
-    } else if( cap < (on + wait)) {
-        return (on + wait) - cap
-    }
+function disemvowel(str) {
+let re = /[aeiou]/gi
 
+    return str.replace(re, '')
 }
 
-console.log(enough(10, 5, 5))
+console.log(disemvowel('This website is for losers LOL!'))
 
 
 
