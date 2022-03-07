@@ -1,15 +1,11 @@
-function findMultiples(integer, limit) {
-    let arr = []
+function reverseLetter(str) {
+   // let a = str.replace(/[0-9]+/gi, '').split('').reverse().join('')
+   let a = str.replace(/[^A-Za-z]+/gi, '').split('').reverse().join('')
+   return a.replace(' ', '')
 
-    for (let i = integer; i <= limit ; i++) {
-        if( i % integer === 0) {
-            arr.push(i)
-        }
-    }
-    return arr
+
 }
-
-console.log(findMultiples(4, 27))
+console.log(reverseLetter("=98xgu29zttr6ogupcxu6pydbot\\\\jkm{ ol=x5aqmllk8vw9"))
 
 
 
