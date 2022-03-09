@@ -1,11 +1,12 @@
-function reverseLetter(str) {
-   // let a = str.replace(/[0-9]+/gi, '').split('').reverse().join('')
-   let a = str.replace(/[^A-Za-z]+/gi, '').split('').reverse().join('')
-   return a.replace(' ', '')
-
+function smallEnough(a, limit){
+let arr = []
+    for (let i = 0; i < a.length; i++) {
+        if( a[i] <= limit) {
+           arr.push(a[i])
+        }
+    }
+    return  arr.length === a.length
 
 }
-console.log(reverseLetter("=98xgu29zttr6ogupcxu6pydbot\\\\jkm{ ol=x5aqmllk8vw9"))
 
-
-
+console.log(smallEnough([101, 45, 75, 105, 99, 107], 107))
