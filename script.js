@@ -1,12 +1,12 @@
-function smallEnough(a, limit){
-let arr = []
-    for (let i = 0; i < a.length; i++) {
-        if( a[i] <= limit) {
-           arr.push(a[i])
-        }
+function solve(s) {
+    let re = /[a-z]/g
+    let a = s.length - s.replace(re, '').length
+    if (s.length / 2 < a || s.length / 2 === a) {
+        return s.toLowerCase()
+    } else  if (s.length / 2 > a) {
+        return s.toUpperCase()
     }
-    return  arr.length === a.length
 
 }
 
-console.log(smallEnough([101, 45, 75, 105, 99, 107], 107))
+console.log(solve("cODE"))
