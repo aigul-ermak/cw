@@ -1,12 +1,11 @@
-var capitals = function (word) {
-    let re = /[A-Z]/g
-    let arr = []
-    for (let i = 0; i < word.length; i++) {
-        if (word[i].match(re) !== null) {
-           arr.push(i)
-        }
-    }
-    return arr
-};
+function removeUrlAnchor(url) {
 
-console.log(capitals('CodEWaRs'))
+    let a = url.indexOf('#')
+    if (a > 0) {
+        return url.slice(0, a)
+    } else {
+        return url
+    }
+}
+
+console.log(removeUrlAnchor('www.codewars.com/katas/'))
