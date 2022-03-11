@@ -1,13 +1,12 @@
-function describeTheShape(angles) {
-    let sum = 180 * (angles - 2)
-    let oneAngle = Math.round(sum / angles)
-    if (angles <= 2) {
-        return 'this will be a line segment or a dot'
-    } else {
-        return `This shape has ${angles} sides and each angle measures ${oneAngle}`
+var capitals = function (word) {
+    let re = /[A-Z]/g
+    let arr = []
+    for (let i = 0; i < word.length; i++) {
+        if (word[i].match(re) !== null) {
+           arr.push(i)
+        }
     }
+    return arr
+};
 
-
-}
-
-console.log(describeTheShape(3))
+console.log(capitals('CodEWaRs'))
