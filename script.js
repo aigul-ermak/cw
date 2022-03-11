@@ -1,11 +1,7 @@
-function removeUrlAnchor(url) {
-
-    let a = url.indexOf('#')
-    if (a > 0) {
-        return url.slice(0, a)
-    } else {
-        return url
-    }
+function removeDuplicateWords(s) {
+    let a = s.split(' ')
+    let b = new Set(a)
+    return Array.from(b).join(' ')
 }
 
-console.log(removeUrlAnchor('www.codewars.com/katas/'))
+console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'))
