@@ -1,14 +1,14 @@
-"use strict";
+function wordsToMarks(string) {
+    let arr = []
+    for (let i = 0; i < string.length; i++) {
+       arr.push(string[i].charCodeAt(0) - 97 + 1)
+    }
 
-
-function flattenAndSort(array) {
-    let a = array.reduce((acc, i) => {
-       acc =  [...acc, ...i]
+    return arr.reduce((acc, i) => {
+        acc = acc + i
         return acc
-    }, [])
-
-    return a.sort((a, b) => a - b)
+    }, 0)
 }
 
-
-console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]]))
+console.log(wordsToMarks('family'))
+// 10
