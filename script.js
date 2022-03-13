@@ -1,14 +1,6 @@
-function wordsToMarks(string) {
-    let arr = []
-    for (let i = 0; i < string.length; i++) {
-       arr.push(string[i].charCodeAt(0) - 97 + 1)
-    }
-
-    return arr.reduce((acc, i) => {
-        acc = acc + i
-        return acc
-    }, 0)
+function repeater(string, n){
+   return string.repeat(n)
 }
 
-console.log(wordsToMarks('family'))
+console.log(repeater('a', 5))
 // 10
