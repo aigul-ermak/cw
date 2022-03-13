@@ -1,14 +1,14 @@
-function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
-    let a = Date.parse(currentDate)
-    let b = Date.parse(expirationDate)
-    if (enteredCode === correctCode && a <= b) {
-        return true
-    } else {
-        return false
-    }
+"use strict";
+
+
+function flattenAndSort(array) {
+    let a = array.reduce((acc, i) => {
+       acc =  [...acc, ...i]
+        return acc
+    }, [])
+
+    return a.sort((a, b) => a - b)
 }
 
-console.log(checkCoupon('123a','123','September 5, 2014','October 1, 2014'))
 
-
-
+console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]]))
