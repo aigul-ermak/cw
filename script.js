@@ -1,10 +1,5 @@
-function factorial(n){
-    let count = 1
-    for (let i = 1; i <= n ; i++) {
-        count = count * i
-    }
-    return count
+function angle(n) {
+    return (n-2) * 180
 }
 
-
-console.log(factorial(4))
+console.log(angle(4))
