@@ -1,5 +1,8 @@
-function angle(n) {
-    return (n-2) * 180
+function reverseNumber(n) {
+
+    return Math.sign(n)*parseInt(n.toString().split('').reverse().join(''))
+
 }
 
-console.log(angle(4))
+
+console.log(reverseNumber(123))
