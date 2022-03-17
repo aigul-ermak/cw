@@ -1,11 +1,19 @@
-function nthChar(words){
-    var s = '';
-    for(var i = 0, l = words.length; i < l; ++i){
-        s += words[i].charAt(i);
-    }
+function tetration(x,y){
 
-    return word;
+if ( y < 1) return 1
+
+    let n = x
+
+    for (let i = 1; i < y ; i++) {
+        n = Math.pow(x, n)
+    }
+    return n
 }
 
 
+console.log(tetration(5,2))
+
+
+//3 3*3*3*3 4th iteration
+//
 
