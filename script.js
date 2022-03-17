@@ -1,18 +1,12 @@
-function evenAndOdd(num) {
-    let a = num.toString().split('')
-    let NE = []
-    let NO = []
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] % 2 === 0) {
-            NE.push(a[i])
-        } else {
-            NO.push(a[i])
-        }
-    }
+function nthChar(words) {
+    let s = ''
+    for (let i = 0; i < words.length; i++) {
 
-    return [+(NE.join('')), +(NO.join(''))]
+        s += words[i].charAt(i)
+    }
+    return s
 }
 
-console.log(evenAndOdd(126453))
+console.log(nthChar(['yoda', 'best', 'has']))
 
 
