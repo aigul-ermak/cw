@@ -1,18 +1,11 @@
-function evenAndOdd(num) {
-    let a = num.toString().split('')
-    let NE = []
-    let NO = []
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] % 2 === 0) {
-            NE.push(a[i])
-        } else {
-            NO.push(a[i])
-        }
+function nthChar(words){
+    var s = '';
+    for(var i = 0, l = words.length; i < l; ++i){
+        s += words[i].charAt(i);
     }
 
-    return [+(NE.join('')), +(NO.join(''))]
+    return word;
 }
 
-console.log(evenAndOdd(126453))
 
 
