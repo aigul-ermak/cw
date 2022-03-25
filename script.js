@@ -1,19 +1,13 @@
-function tetration(x,y){
-
-if ( y < 1) return 1
-
-    let n = x
-
-    for (let i = 1; i < y ; i++) {
-        n = Math.pow(x, n)
+function bump(x){
+let a = x.split('');
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === 'n') {
+            count  += 1
+        }
     }
-    return n
+    return count > 15 ? 'Car Dead' : 'Woohoo!'
 }
 
 
-console.log(tetration(5,2))
-
-
-//3 3*3*3*3 4th iteration
-//
-
+console.log(bump('______n___n_'))
