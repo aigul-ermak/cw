@@ -1,13 +1,14 @@
-function bump(x){
-let a = x.split('');
-    let count = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] === 'n') {
-            count  += 1
-        }
+function halvingSum(n) {
+let count = 0
+    while( n > 0) {
+    count += n
+        n = Math.floor(n / 2)
     }
-    return count > 15 ? 'Car Dead' : 'Woohoo!'
+    return count
+
 }
 
 
-console.log(bump('______n___n_'))
+console.log(halvingSum(127))
+
+
