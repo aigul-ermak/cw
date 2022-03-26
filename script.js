@@ -1,5 +1,6 @@
-function oddCount(n) {
-   return Math.floor(n/2)
+function sentencify(words) {
+
+    return  `${words.join(' ').replace(/^[a-z]/, firstLetter => firstLetter.toUpperCase())}.`
 }
 
-console.log(oddCount(15023))
+console.log(sentencify(["FIELDS","of","CORN","are","to","be","sown"]))
