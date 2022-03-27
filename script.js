@@ -1,6 +1,10 @@
-function sentencify(words) {
+function isVeryEvenNumber(n) {
+    let numbers = String(n).split('').map(Number)
+    const totalSum = numbers.reduce((acc, number) => acc + number, 0)
+    console.log(totalSum)
+    while (String(totalSum).length > 1) return isVeryEvenNumber(totalSum)
+    return totalSum % 2 === 0
 
-    return  `${words.join(' ').replace(/^[a-z]/, firstLetter => firstLetter.toUpperCase())}.`
 }
 
-console.log(sentencify(["FIELDS","of","CORN","are","to","be","sown"]))
+console.log(isVeryEvenNumber(1234))
