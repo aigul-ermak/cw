@@ -1,10 +1,7 @@
-function isVeryEvenNumber(n) {
-    let numbers = String(n).split('').map(Number)
-    const totalSum = numbers.reduce((acc, number) => acc + number, 0)
-    console.log(totalSum)
-    while (String(totalSum).length > 1) return isVeryEvenNumber(totalSum)
-    return totalSum % 2 === 0
+const last = xs => {
+    return xs.length === 0 ? null : xs[xs.length - 1]
 
 }
 
-console.log(isVeryEvenNumber(1234))
+
+console.log(last([1,2,3]))
