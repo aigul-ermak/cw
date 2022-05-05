@@ -12,6 +12,4 @@ const rev = (xs) => {
    return arr
 }
 
-
-
 console.log(rev([3,2,1]))
