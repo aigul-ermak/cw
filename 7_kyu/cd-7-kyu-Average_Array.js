@@ -1,19 +1,12 @@
 /*
-
-Link: https://www.codewars.com/kata/570e8ec4127ad143660001fd/train/javascript
-
+Link: https://www.codewars.com/kata/556196a6091a7e7f58000018/train/javascript
  */
 
-function billboard(name, price = 30) {
-    let count = 0;
-    const nameLength = name.split('')
-    for (let i = 0; i < nameLength.length; i++) {
-        count += price
-    }
-    return count
+function largestPairSum(numbers) {
+    numbers.sort((a,b) => b- a)
+    return numbers[0] + numbers[1]
 }
 
-console.log(billboard('Jeong-Ho Aristotelis'));
-
+console.log(largestPairSum([10, 14, 2, 23, 19]));
 
 
